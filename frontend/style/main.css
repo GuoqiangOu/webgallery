@@ -1,0 +1,102 @@
+html {overflow: -moz-scrollbars-vertical;}
+
+body {
+	background: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #3C3D3F;
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+
+header{
+    display:flex;
+    margin-top:36px;
+    height: 64px;
+    justify-content:flex-end;
+}
+
+header #title{
+    color: black;
+    text-decoration:none;
+    margin: 0px;
+    width:100%;
+    font-size:48px;
+	color:#c35e5e;
+}
+
+.header_btn{
+    text-decoration:none;
+    font-size: 16px;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+
+footer{
+    margin-top: 20px;
+    text-align:center;
+}
+
+.alert{
+    color: red;
+}
+
+.pagination{
+    display:flex;
+    align-items:center;
+	flex-direction:row;
+	justify-content:center;
+}
+
+.icon{
+    width:50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:75%;
+}
+
+.delete_icon{
+    background-image: url('../media/recycle-bin.png');
+}
+
+.left_icon{
+    background-image: url('../media/left-arrow.png');
+}
+
+.right_icon{
+    background-image: url('../media/right-arrow.png');
+}
+
+.titles{
+	font-size:20px;
+	font-weight:bold;
+	margin:10px 10px 10px 10px;
+	padding:10px 0px 10px 25px;
+	color:white;
+	background-color: #c35e5e;
+	border-radius: 15px;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+#error_box{
+    color: red;
+    visibility:hidden;
+}
+
+#error_box::before { 
+    content: "Error: ";
+}
+
+.author_pagination{
+    display:flex;
+}
+
+.gallery_author, #greetings{
+    color:#c35e5e;
+}

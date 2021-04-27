@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Webgallery</title>
+    <link href="style/main.css" rel="stylesheet" type="text/css"/>
+    <link href="style/form.css" rel="stylesheet" type="text/css"/>
+    <link href="style/images.css" rel="stylesheet" type="text/css"/>
+    <link href="style/comments.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <header>
+        <a href="./index.html" id="title">Webgallery</a>
+        <button id="logout_button" class="btn hidden">Logout</button>
+    </header>
+
+    <div id="greetings"></div>
+    
+
+    <form class="form" id="login_form">
+        <div class="toggle_form" id="toggle_login_form">
+            <div class="titles">Login or Register</div>
+            <input type="text" name="username" class="form_element" placeholder="Enter a username" required/>
+            <input type="password" name="password" class="form_element" placeholder="Enter a password" required/>
+            <div class="login_form_btns">
+                <button id="login" name="action" class="btn">Login</button>
+                <button id="register" name="action" class="btn">Register</button>
+            </div>
+        </div>
+    </form>
+
+    <p id="error_box"></p>
+    <div class="pagination author_pagination">
+        <div class="left_icon icon"></div>
+        <div class="gallery_author"></div>
+        <div class="right_icon icon"></div>
+    </div>
+
+    <div id="images"></div>
+
+    <div id ="toggle_btns">
+        <input type="button" id ="toggle_image_btn" class="btn hidden" value="Post an Image"/>
+        <input type="button" id ="toggle_comment_btn" class="btn hidden" value="Post a Comment"/>
+    </div>
+
+    <form class="form" id="add_image_form">
+        <div class="toggle_form" id="toggle_image_form">
+            <div class="titles">Post an Image</div>
+            <input type="text" id="post_image_title" class="form_element" placeholder="Enter a title for the image" name="post_image_title" required/>
+            <input type="file" id="picture" class="form_element" name="picture" accept="image/*" required/>
+            <button type="submit" class="btn">Post Your Image</button>
+        </div>
+    </form>
+
+    <form class="form" id="add_comment_form">
+        <div class="toggle_form" id="toggle_comment_form">
+            <div class="titles">Post a Comment</div>
+            <textarea rows="5" id="post_comment_content" class="form_element" name="user_comment" placeholder="Enter your comment" required></textarea>
+            <button type="submit" class="btn">Post Your Comment</button>
+        </div>
+    </form>
+
+    <div id="comments"></div>
+
+    
+
+    <footer>
+        <a href='./credits.html'>credits</a>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/api.js"></script>
+</body>
+</html>
